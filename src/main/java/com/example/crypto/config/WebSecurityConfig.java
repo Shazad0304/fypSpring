@@ -52,6 +52,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/forget/**",
                 "/verifyEmail/**",
                 "/register",
+                "/prediction",
                 "/v2/api-docs",
                 "/configuration/ui",
                 "/swagger-resources/**",
