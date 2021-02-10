@@ -1,6 +1,7 @@
 package com.example.crypto.Controllers;
 
 
+import com.example.crypto.Hashing.MD5;
 import com.example.crypto.JWT.JwtTokenUtil;
 import com.example.crypto.Model.UserModel;
 import com.example.crypto.services.userService;
@@ -35,7 +36,7 @@ public class ProfileController {
         temp.setFirstName(us.getFirstName());
         temp.setLastName(us.getLastName());
         if(us.getPassword() != null){
-            temp.setPassword(us.getPassword());
+            temp.setPassword(MD5.getMd5(us.getPassword()));
         }
         return new ResponseEntity<UserModel>(this.us.saveUSer(temp), HttpStatus.resolve(200));
     }

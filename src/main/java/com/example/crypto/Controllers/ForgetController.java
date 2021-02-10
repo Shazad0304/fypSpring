@@ -1,6 +1,7 @@
 package com.example.crypto.Controllers;
 
 
+import com.example.crypto.Hashing.MD5;
 import com.example.crypto.Model.ErrorModel;
 import com.example.crypto.Model.UserModel;
 import com.example.crypto.services.emailService;
@@ -44,6 +45,7 @@ public class ForgetController {
 
     @PutMapping("/save")
     public ResponseEntity<?> saveupdate(@RequestBody UserModel a) throws IOException, MessagingException {
+                a.setPassword(MD5.getMd5(a.getPassword()));
              return new ResponseEntity<UserModel>(this.us.saveUSer(a), HttpStatus.OK);
     }
 }

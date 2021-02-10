@@ -1,6 +1,7 @@
 package com.example.crypto.Controllers;
 
 
+import com.example.crypto.Hashing.MD5;
 import com.example.crypto.ML.LinearRegression;
 import com.example.crypto.ML.LinearRegressionClassifier;
 import com.example.crypto.Model.CoinHistory;
@@ -53,6 +54,7 @@ public class RegisterController {
         }
         else{
             a.setUserId(UUID.randomUUID().toString());
+            a.setPassword(MD5.getMd5(a.getPassword()));
             es.verifymail(a.getEmail(),a.getUserId());
             return new ResponseEntity<UserModel>(this.us.saveUSer(a), HttpStatus.resolve(200));
         }

@@ -2,6 +2,7 @@ package com.example.crypto.Controllers;
 
 import java.util.Objects;
 
+import com.example.crypto.Hashing.MD5;
 import com.example.crypto.JWT.JwtTokenUtil;
 import com.example.crypto.Model.*;
 import com.example.crypto.services.userService;
@@ -45,7 +46,7 @@ public class JwtAuthenticationController {
                         authenticationRequest.getUsername());
         final String token = jwtTokenUtil.generateToken(userDetails);
 
-        if(us.getByCredentials(authenticationRequest.getUsername(),authenticationRequest.getPassword(),authenticationRequest.getEmail()) == null){
+        if(us.getByCredentials(authenticationRequest.getUsername(), MD5.getMd5(authenticationRequest.getPassword()),authenticationRequest.getEmail()) == null){
             return new ResponseEntity<ErrorModel>(new ErrorModel("User Not Found"), HttpStatus.UNAUTHORIZED);
         }
         else{
