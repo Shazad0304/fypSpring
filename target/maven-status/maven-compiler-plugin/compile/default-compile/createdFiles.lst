@@ -4,6 +4,7 @@ com\example\crypto\Model\Post.class
 com\example\crypto\Model\UserModel.class
 com\example\crypto\Controllers\RegisterController.class
 com\example\crypto\Model\JwtRequest.class
+com\example\crypto\News\News.class
 com\example\crypto\mongorepo\connection.class
 com\example\crypto\Model\CMC\CoinInfo.class
 com\example\crypto\Controllers\VerifyController.class
@@ -31,8 +32,10 @@ com\example\crypto\JWT\JwtTokenUtil.class
 com\example\crypto\services\fcmService.class
 com\example\crypto\Controllers\ForgetController.class
 com\example\crypto\Model\JwtResponse.class
+com\example\crypto\News\newsService.class
 com\example\crypto\services\userService.class
 com\example\crypto\Controllers\ProfileController.class
+com\example\crypto\Controllers\newsController.class
 com\example\crypto\Controllers\PredictionController.class
 com\example\crypto\Model\FCM\NotificationModel.class
 com\example\crypto\Model\PairModel.class

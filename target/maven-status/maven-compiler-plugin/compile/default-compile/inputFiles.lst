@@ -6,6 +6,7 @@ D:\fyp1\fypSpring\src\main\java\com\example\crypto\ML\LinearRegression.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\RegisterController.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\ErrorModel.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\AlertController.java
+D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\newsController.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\config\JwtRequestFilter.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\JwtResponse.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\services\fcmService.java
@@ -33,6 +34,7 @@ D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\FCM\NotificationModel.j
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\CryptoApplication.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\config\CORS.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\JWT\JwtTokenUtil.java
+D:\fyp1\fypSpring\src\main\java\com\example\crypto\News\newsService.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\CoinsController.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Hashing\MD5.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\UserModel.java
@@ -40,3 +42,4 @@ D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\PairModel.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\services\alertService.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\CMC\SymbolInfo.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\JwtRequest.java
+D:\fyp1\fypSpring\src\main\java\com\example\crypto\News\News.java
