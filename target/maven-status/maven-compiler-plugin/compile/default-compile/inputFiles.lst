@@ -1,6 +1,7 @@
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\services\cmcService.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\config\SwaggerConfig.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\DAO\AlertDao.java
+D:\fyp1\fypSpring\src\main\java\com\example\crypto\services\TweetService.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\config\WebSecurityConfig.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\ML\LinearRegression.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\RegisterController.java
@@ -20,6 +21,7 @@ D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\AlertModel.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\JwtAuthenticationController.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\services\Polenix.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\ProfileController.java
+D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\Tweet.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Cron\NotificationCron.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\ForgetController.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\CMC\CoinInfo.java
@@ -29,6 +31,7 @@ D:\fyp1\fypSpring\src\main\java\com\example\crypto\services\emailService.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\services\userService.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\config\JwtAuthenticationEntryPoint.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\JwtUserDetailsService.java
+D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\TweetController.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\DAO\UserDao.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\FCM\NotificationModel.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\CryptoApplication.java
