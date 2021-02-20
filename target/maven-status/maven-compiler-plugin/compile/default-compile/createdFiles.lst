@@ -31,6 +31,7 @@ com\example\crypto\Controllers\TweetController.class
 com\example\crypto\Cron\NotificationCron.class
 com\example\crypto\DAO\AlertDao.class
 com\example\crypto\Model\FCM\Body.class
+com\example\crypto\Model\PredictionModel.class
 com\example\crypto\services\alertService.class
 com\example\crypto\config\WebSecurityConfig.class
 com\example\crypto\CryptoApplication.class

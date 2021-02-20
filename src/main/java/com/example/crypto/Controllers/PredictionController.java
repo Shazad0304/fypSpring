@@ -2,6 +2,7 @@ package com.example.crypto.Controllers;
 
 import com.example.crypto.ML.LinearRegression;
 import com.example.crypto.Model.CoinHistory;
+import com.example.crypto.Model.PredictionModel;
 import com.example.crypto.services.Polenix;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,7 @@ public class PredictionController {
 
 
 
-        List<Map<String, Object>> response = new ArrayList();
+        List<PredictionModel> response = new ArrayList();
 
         for(int m = days;m > 0;m--) {
             long DAY_IN_MS = 1000 * 60 * 60 * 24;
@@ -42,15 +43,20 @@ public class PredictionController {
             }
                 LinearRegression o = new LinearRegression(x, y);
 
-                Map<String,Object> rsp = new HashMap();
-                Date tstamp = new Date(System.currentTimeMillis() - ((m) * DAY_IN_MS));
-                rsp.put("timestamp", tstamp.getTime() / 1000);
-                rsp.put("prediction", o.predict(i));
+                PredictionModel rsp = new PredictionModel();
+                Date tstamp = new Date(System.currentTimeMillis() + ((m) * DAY_IN_MS));
+                rsp.setTimestamp(tstamp.getTime() / 1000);
+                rsp.setPrediction(o.predict(i));
                 response.add(rsp);
                 i++;
 
         }
 
+        Collections.sort(response, (s1, s2) -> {
+            return s1.getTimestamp() < s2.getTimestamp() ? -1
+                : s1.getTimestamp() > s2.getTimestamp() ? 1
+                : 0;
+        });
 
         return ResponseEntity.status(200).body(response);
     }
