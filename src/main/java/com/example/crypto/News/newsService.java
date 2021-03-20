@@ -1,6 +1,7 @@
 package com.example.crypto.News;
 
 import com.example.crypto.Model.CMC.CoinInfo;
+import com.example.crypto.Model.News;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -25,7 +26,7 @@ public class newsService {
                 .build();
     }
 
-    public Mono<Map> getDetails(){
+    public Mono<News> getDetails(){
         return this.client.get()
                 .uri(uriBuilder ->
                         uriBuilder.path("/news/")
@@ -34,6 +35,6 @@ public class newsService {
                 )
                 .header("authorization","Apikey "+apiKey)
                 .retrieve()
-                .bodyToMono(Map.class);
+                .bodyToMono(News.class);
     }
 }

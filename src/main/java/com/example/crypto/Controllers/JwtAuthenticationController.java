@@ -1,12 +1,8 @@
 package com.example.crypto.Controllers;
 
-import java.util.List;
-
 import com.example.crypto.Hashing.MD5;
 import com.example.crypto.JWT.JwtTokenUtil;
 import com.example.crypto.Model.*;
-import com.example.crypto.News.News;
-import com.example.crypto.News.newsService;
 import com.example.crypto.services.userService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
