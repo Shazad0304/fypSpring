@@ -3,6 +3,7 @@ package com.example.crypto.Controllers;
 import com.example.crypto.Hashing.MD5;
 import com.example.crypto.JWT.JwtTokenUtil;
 import com.example.crypto.Model.*;
+import com.example.crypto.services.alertService;
 import com.example.crypto.services.userService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,6 +21,9 @@ public class JwtAuthenticationController {
     private JwtTokenUtil jwtTokenUtil;
     @Autowired
     private JwtUserDetailsService userDetailsService;
+
+    @Autowired
+    private alertService as;
 
 
     @Autowired
@@ -41,6 +45,12 @@ public class JwtAuthenticationController {
         else{
             return ResponseEntity.ok(new JwtResponse(token));
         }
+    }
+
+    @RequestMapping(value = "/test-notification",method = RequestMethod.GET)
+    public ResponseEntity<?> testNotifications(){
+        as.sendNotifcations();
+        return  ResponseEntity.status(200).body("Notifications Sent");
     }
 
 

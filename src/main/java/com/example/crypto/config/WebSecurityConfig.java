@@ -49,6 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.csrf().disable()
 // dont authenticate this particular request
                 .authorizeRequests().antMatchers("/authenticate",
+                "/test-notification",
                 "/forget/**",
                 "/verifyEmail/**",
                 "/register",
