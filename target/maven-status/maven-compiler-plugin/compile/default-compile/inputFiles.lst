@@ -44,6 +44,7 @@ D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\News.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\TweetController.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\DAO\UserDao.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\FCM\NotificationModel.java
+D:\fyp1\fypSpring\src\main\java\com\example\crypto\Model\Profile.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\JWT\JwtTokenUtil.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\News\newsService.java
 D:\fyp1\fypSpring\src\main\java\com\example\crypto\Controllers\CoinsController.java

@@ -8,6 +8,7 @@ com\example\crypto\config\JwtAuthenticationEntryPoint.class
 com\example\crypto\Controllers\JwtAuthenticationController.class
 com\example\crypto\Controllers\AlertController.class
 com\example\crypto\services\emailService$2.class
+com\example\crypto\Model\Profile.class
 com\example\crypto\config\CORS.class
 com\example\crypto\services\emailService.class
 com\example\crypto\Model\CMC\SymbolInfo.class
