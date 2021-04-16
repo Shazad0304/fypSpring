@@ -51,7 +51,7 @@ public class ProfileController {
         temp.setLastName(us.getLastName());
         if(us.getNewPassword() != null){
             String hashOldPass = MD5.getMd5(us.getOldPassword());
-            if(temp.getPassword() == hashOldPass){
+            if(temp.getPassword().equals(hashOldPass)){
                 temp.setPassword(MD5.getMd5(us.getNewPassword()));
             }
             else{
