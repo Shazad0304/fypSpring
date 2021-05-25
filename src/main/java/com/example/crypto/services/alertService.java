@@ -109,8 +109,8 @@ public class alertService implements AlertDao {
 
             }
             // end fetching data
-            d.setTitle(x.getPair());
-            d.setBody(x.getPair() + ": "+ quoteprice +"\n" + "Change: " + change + "%");
+            d.setTitle("Crypto Alert");
+            d.setBody(x.getPair().split("-")[0]+" is up "+change+"% to $"+quoteprice);
             m.setNotification(d);
             m.setTopic("cryptassist-"+x.getPair());
             nm.setMessage(m);
